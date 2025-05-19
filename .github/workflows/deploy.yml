@@ -1,0 +1,16 @@
+name: Deploy First Workflow
+
+on: push
+
+jobs: 
+    first-jobs:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Welcome Message
+          run: echo "First GH Workflow"
+
+        - name: List Files
+          run: ls 
+
+        - name: Read Files
+          run: cat README.md 
